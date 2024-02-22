@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.1</version>
+		<version>3.2.2</version>
 		<relativePath/>
 	</parent>
 	<groupId>com.example</groupId>
@@ -15,19 +15,7 @@
 	<description>mandacarubroker</description>
 	<properties>
 		<java.version>17</java.version>
-		<spring-modulith.version>1.1.2</spring-modulith.version>
 	</properties>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.modulith</groupId>
-				<artifactId>spring-modulith-bom</artifactId>
-				<version>${spring-modulith.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -95,19 +83,6 @@
 			<groupId>com.netflix.graphql.dgs.codegen</groupId>
 			<artifactId>graphql-dgs-codegen-gradle</artifactId>
 			<version>6.0.3</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.modulith</groupId>
-			<artifactId>spring-modulith-starter-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.modulith</groupId>
-			<artifactId>spring-modulith-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.modulith</groupId>
-			<artifactId>spring-modulith-starter-jpa</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.puppycrawl.tools</groupId>
